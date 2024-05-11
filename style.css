@@ -1,0 +1,17 @@
+ body {
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGRmbG93ZXJzZXQxOWIzLW1pbnR5LTQwLmpwZw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ canvas {
+    background-image: url("https://clipart-library.com/images/6Tr5Ej4pc.jpg");
+    box-shadow: 10px 10px 10px 10px  rgb(0, 0, 0);
+ }
+ p{
+   color: white;
+ }
