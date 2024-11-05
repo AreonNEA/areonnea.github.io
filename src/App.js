@@ -4,7 +4,7 @@ import reducer from './reducer';
 import AddTodo from './AddTodo';
 import TodoList from './TodoList';
 import TodoStats from './TodoStats';
-import styles from  './styles/App.module.css';
+import styles from './styles/App.module.css';
 
 function App() {
   const [todos, dispatch] = useReducer(reducer, [
@@ -15,7 +15,7 @@ function App() {
   )
   return (
     <div className={styles.App}>
-      <AddTodo dispatch={dispatch} />
+      <AddTodo dispatch={dispatch} todos={todos} />
       <TodoList todos={todos} dispatch={dispatch} />
       <TodoStats todos={todos} dispatch={dispatch} />
     </div>
