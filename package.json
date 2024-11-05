@@ -2,7 +2,7 @@
   "name": "todos",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://areonnea.github.io/", 
+  "homepage": "https://areonnea.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,8 +11,7 @@
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
     "serve": "^14.2.4",
-    "web-vitals": "^2.1.4",
-    "gh-pages": "^5.0.0"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
