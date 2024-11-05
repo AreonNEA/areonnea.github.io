@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(67, 69, 190, 0.705);
+  padding: 100px;
+  min-width: 200px;
+  min-height: 150px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgb(65, 65, 65);
+  font-size:16px;
+  font-family: Arial, sans-serif;
+}
+.App div{
+    margin: 5px;
+}
