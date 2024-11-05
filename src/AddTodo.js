@@ -7,12 +7,14 @@ export default function AddTodo({ dispatch, todos }) {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
-        if (newTodo && !todos.some(todo => todo.text === newTodo)) {
+        if (newTodo.trim() === "") {
+            setError("Write something");  
+        } else if (todos.some(todo => todo.text === newTodo)) {
+            setError("A task with this text already exists!");
+        } else {
             dispatch({ type: "AddTodos", payload: { id: Math.random(), text: newTodo, isCompleted: false } });
             setNewTodo("");
-            setError(""); 
-        } else {
-            setError("A task with this text already exists!");
+            setError("");
         }
     };
 
@@ -27,7 +29,7 @@ export default function AddTodo({ dispatch, todos }) {
                 />
                 <button type="submit">Add</button>
             </form>
-            {error && <div className={styles.error}>{error}</div>}  
+            {error && <div className={styles.error}>{error}</div>}
         </div>
     );
 }
